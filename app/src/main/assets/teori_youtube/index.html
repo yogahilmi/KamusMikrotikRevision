@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <head> <meta name="viewport" content="width=device-width, user-scalable=no" /></head>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+  
+  
+  
+  
+</head>
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 16px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #E76E66;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 105%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+	border-top:2px solid #666;
+	background:#f6f6f6;
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top:-2px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:4px;
+	border-top:2px solid #666;
+	color:#fff;
+	background:#666;
+	font-weight:bold;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+
+</style>
+
+<body>
+
+
+<div data-role="page" id="pageone">
+  <div data-role="content">
+  <div class="my-wrapper" >
+    <ul data-role="listview" data-autodividers="false" data-inset="true" data-filter="true" data-theme="c" data-filter-placeholder="Cari Istilah" data-filter-theme="e">
+
+<li><a href="https://www.youtube.com/watch?v=cI5ZgSK7R98" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting DHCP Server Modem Speedy</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=bds4j13qbJ8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Brigde Modem Speedy</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=C8G2AoDhT38" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting DHCP Server di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=isTuQHhbTD4" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting VLAN Modem ADSL WiFi, PPPoE, Speedy</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=QknJdRrqAXk" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting DHCP Relay Wireless LAN Port Modem Speedy ke MikroTik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=cwaHnvEvNfk" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Brigde Modem Speedy di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=yli2GXjqyXY" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting DHCP Server Modem Speedy di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Ji6aitlyTf4" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Memblokir Internet Berdasarkan IP Address dan Mac Address di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=S0AzZndF7mA" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Memblokir Internet Sekelompok IP Address di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=rgl0Fs7vaNc" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara update Nice Otomatis di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Xom0SdWTY2k" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting SNTP di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=cX-8wjYFBd8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Melimit Bandwitdh Streaming Youtube</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=IOO0ISQsAE0" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=UvYLAmK8LQI" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Managemen User Profil Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=vCidJPUsO4s" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Memblokir Internet di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=nVNuPq03iKI" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Limitasi Bandwitdh dengan Simple Queues</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=NwRobxJ0HG4" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Limitasi Bandwitdh Simple Queues Berdasarkan Waktu</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=waXMxa4N2a0" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Hacking HotSpot Mikrotik.mp4</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=cwbO2smreE4" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Konfigurasi dasar Hotspot Mikrotik.wmv</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=5yGa4eeix9k" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara membuat web proxy.mp4</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Itk_jrZ2Cqk" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Queues Tree Mikrotik RB 750</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=NQv-ZQAa0Es" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Membuat VPN di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=-3NFWjbVx-Q" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Meremote Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=1Gf46rRwGhQ" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Membuat Background musik di login page mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=qdeyuPQbfDM" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara membuka situs yang diblokir di jaringan Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=0N1HwW2vY78" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara membuat simple queues di mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=X1p5A2L0D4s" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Access Point untuk Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=vibBKyAi-8k" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Install Ulang Mikrotik RB 750</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Bcff6f0B0no" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2015 Paket 2</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=ZMXGjfYcSLU" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Memblokir akses http dan https di mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=PTF-2B5VFVc" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting DHCP Server di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=GFsDrikXs_Y" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Mencegah Client Menganti DNS Pada Jaringan Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=A7xrbHeUmOg" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Mudah Memblokir https Facebook dan Youtube di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=dyIEvfy6sbA" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Memblokir dan Redirect Website pada Proxy Internal Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=dJ7C6J6mMBA" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Mencegah Download Menggunakan Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=PIH0-bfxq5E" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Keyword Filterring pada Proxy Internal Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=lThjL5Don7s" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Web Proxy Internal Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Lq2fBniNZao" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Management User Hotspot Mikrotik Profile Shared</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=HgiV11lsxZA" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Management User Hotspot Mikrotik Profile Time Base</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=-GG0RtFyCT8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Management User Hotspot Mikrotik Profile Quota</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=lgMgQq2OB8g" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Management User Hotspot Mikrotik Profile Unlimited</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=CJnrFR3QTWQ" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Access Point untuk Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=I_ues9IGOTs" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=mqn5_7Tf1RQ" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Konfigurasi Routerboard Mikrotik 750 Menggunakan Modem Statis</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=TOBuHl2WU5k" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2015 Paket 1</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=6M38Crn8-yY" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2016 Paket 2</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=MAS1RK1KUzU" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Setting access point untuk hotspot mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=TZ7AWiXj0V8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2016 Paket 3</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=Gb1mLJkCwFk" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Mengamankan DHCP Server di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=RGyRS8Z7Hm8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Wlan di Mikrotik RB 951ui-2Hnd</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=VYT6R50qxC0" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Virtual Access Point di Mikrotik RB 951ui-2Hnd</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=GFuN8vIvq0s" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Kenceng Abis Downloadnya Boss</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=OIgDyBxouB0" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">cara setting mikrotik menggunakan modem indihome</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=iC4Uo9UdNHY" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2017 Paket 2</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=QiYrpkU6rgI" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Pembahasan UKK TKJ 2017 Paket 3</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=3jm-GldsxwU" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">2 Line indihome Load Balacing Menggunakan Metode PCC</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=4KHVdZWYOs8" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">2 Line Indihome Load Balancing Metode ECMP</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=VniO5lcwdls" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Simple Queues Berdasarkan Waktu</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=IwDx6OaWk9Y" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Setting Jaringan Wireless Point to Point di Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=jJocJ2-3xL4" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Membuat Jaringan Hotspot RT RW</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=zXVtKp0UNDY" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Integrasi Hotspot Mikrotik dengan User Manager</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=-ndVBU5VoXo" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara Mengganti Halaman Login Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=m1UBRjr-xbI" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">cara membuat user trial di hotspot mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=aLeV0j_F9Uw" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">Cara membypass User Hotspot Mikrotik</h2></a></li>
+<li><a href="https://www.youtube.com/watch?v=XTIicWZ1UCM" data-transition="flow"><img src="icon/icon.png" class="image"><h2 class="wrap">cara bypass website tertentu di hotspot mikrotik</h2></a></li>
+
+
+		
+</ul>
+  </div> </div>
+</div>  		
+	</body>
+</html>

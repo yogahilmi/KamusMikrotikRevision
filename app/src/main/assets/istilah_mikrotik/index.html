@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <head> <meta name="viewport" content="width=device-width, user-scalable=no" /></head>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+  
+  
+  
+  
+</head>
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 16px;
+    padding: 8px 12px 8px 12px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #E76E66;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 105%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+	border-top:2px solid #666;
+	background:#f6f6f6;
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top:-2px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:4px;
+	border-top:2px solid #666;
+	color:#fff;
+	background:#666;
+	font-weight:bold;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+
+</style>
+
+<body>
+
+
+<div data-role="page" id="pageone">
+  <div data-role="content">
+  <div class="my-wrapper" >
+    <ul data-role="listview" data-autodividers="false" data-inset="true" data-filter="true" data-theme="a" data-filter-placeholder="Cari Istilah" data-filter-theme="e">
+
+<li><h2>System</h2><p class="wrap">Tutorial System, Paket Yang Wajib Diinstal Karena Merupakan Inti Dari Mikrotik</p></li>
+<li><h2>PPP (Point to Point Protocol)</h2><p class="wrap">Tutorial Ppp(Point To Point Protocol), Merupakan Paket Yang Memuat Protokol Ppp. Paket Ini Diperlukan Untuk Fitur Komunikasi Serial Dengan Menggunakan Ppp, Isdn Ppp, L2Tp, Dan Pptp Serta Komunikasi Ppp On Ethernet(Pppoe). Paket Ppp Digunakan Untuk Komunikasi Wide Area Network Dengan Menggunakan Komunikasi Serial Mode Asyncronous Maupun Mode Synchronous.</p></li>
+<li><h2>DHCP(Dynamic Host Configuration Protocol)</h2><p class="wrap">Tutorial Dhcp(Dynamic Host Configuration Protocol), Paket Yang Memuat Fitur Dhcp Baik Yang Diperlukan Untuk Menjadi Client Maupun Server.</p></li>
+<li><h2>Advanced –tools</h2><p class="wrap">Tutorial Advanced –Tools, Memuat Fitur E-Mail Client, Ping, Netwatch, Traceroute, Bandwidth Tester, Traffic Monitoring, Mrtg, Dan Utility Yang Lain, Yang Sering Diperlukan Untuk Mengetahui Kondisi Router Maupun Jaringan. Fitur Netwatch Merupakan Salah Satu Fitur Yang Memungkinkan Mikrotik Menjadi Lebih Pintar Dan Dapat Memilih Konfigurasi Berdasarkan Script( Urutan Perintah) Sesuai Kondisi Jaringan (Netwatch).</p></li>
+<li><h2>Arlan</h2><p class="wrap">Tutorial Arlan, Merupakan Dukungan Mikrotik Untuk Penggunaan Card Isa Arlan 655 Wireless Interface Agar Dapat Secara Transparan Berkomunikasi Dengan Lawannya.</p></li>
+<li><h2>GPS</h2><p class="wrap">Tutorial Gps, Mikrotik Dapat Menggunakan Penerima Global Poasitioning System(Gps) Sebagai Referensi Waktu Network Time Protokol (Ntp) Dan Lokasi.</p></li>
+<li><h2>Hotspot</h2><p class="wrap">Tutorial Hotspot, Digunakan Untuk Melakukan Authentication, Authorization Dan Accounting Pengguna Yang Melakukan Access Jaringan Melalui Gerbang Hotspot. Pengguna Hotspot Sebelum Melakukan Access Jaringan Perlu Melakukan Authentication Melalui Web Browser Baik Dengan Protokol Http Maupun Https (Secure Http).</p></li>
+<li><h2>ISDN</h2><p class="wrap">Tutorial Isdn, Mikrotik Router Dapat Berfungsi Sebagai Isdn Client Maupun Server. Fungsi Dial- Up Dapat Diatur Secara Permanen Ataupun Dial-On- Demand. Ip Address Yang Diberikan Isp Dapat Digunakan Sebagai Default Route Table.</p></li>
+<li><h2>LCD</h2><p class="wrap">Tutorial Lcd, Digunakan Untuk Menampilkan Informasi Kondisi Sistem Mikrotik Melalui Layer Lcd Mini Yang Tersambung Ke Paralel Ataupun Usb.</p></li>
+<li><h2>NTP ( Network Time Protocol)</h2><p class="wrap">Tutorial Ntp ( Network Time Protocol), Digunakan Untuk Menyelaraskan Sistem Waktu Komputer Dalam Jaringan.</p></li>
+<li><h2>Radio LAN</h2><p class="wrap">Tutorial Radio Lan, Mikrotik Mendukung Penggunaan Wireless Radio Lan.</p></li>
+<li><h2>Router Board</h2><p class="wrap">Tutorial Router Board, Digunakan Untuk Mendukung Penggunaan Mikrotik Pada Papan Rangkaian Khusus. Papan Rangkaian Khusus Tersebut Pada Dasarnya Merupakan Computer Minimum (Tanpa Harddisk Controller, Vga Dan Sound) Dengan Kartu Jaringan, Catu Daya Lebih Sederhana( Cukup + 12 Vdc) Dan Performa Yang Sangat Minimum. Router Board Yag Dapat Digunakan Mikrotik Adalah Router Board 200 Dan 500</p></li>
+<li><h2>Routing</h2><p class="wrap">Tutorial Routing, Diperlukan Jika Jaringan Menggunakan Routing Dynamic. Mikrotik Dapat Menggunakan Rip, Ospf, Maupun Bgp Versi 4.</p></li>
+<li><h2>Security</h2><p class="wrap">Tutorial Security, Berisikan Dukungan Untuk Keamanan Komunikasi. Paket Ini Diperlukan Oleh Mikrotik Untuk Menjalankan Ip Security(Ip Sec), Secure Shell, Dan Untuk Menjalankan Win Box Pada Mode Aman (Secure).</p></li>
+<li><h2>Telepony</h2><p class="wrap">Tutorial Telepony, Berguna Untuk Mengatur Layanan Komunikasi Dengan Menggunakan Voice Over Ip (Voip). Paket Ini Selain Memberikan Fungsi Gatekeeper Juga Mendukung Penggunaan Beberpa Hardware Voip Terpasng Pada Mikrotik Router Os.</p></li>
+<li><h2>UPS</h2><p class="wrap">Tutorial Ups, Fitur Ini Memudahkan Administrator Memonitor Dan Mengamankan Router Dari Kerusakan Akibat Gangguan Catu Daya. Untuk Melakukan Pengamanan Tersebut Router Akan Selalu Memonitor Kondisi Baterai Ups Saat Catu Daya Utama Tidak Terdsedia. Jika Kondisi Baterai Ups Dibawah 10% Maka Fitur Ini Memerintahkan Rauter Telah Pada Kondisi Hibernate Dan Siap Untuk Kembali Aktif Saat Catu Daya Utama Kembali.</p></li>
+<li><h2>Mikrotik web proxy</h2><p class="wrap">Tutorial Mikrotik Web Proxy, Dalam Saat Yang Bersamaan Dapat Difungsikan Sebagai Proxy Http Normal Maupun Transparant.</p></li>
+
+
+
+		
+</ul>
+  </div> </div>
+</div>  		
+	</body>
+</html>
