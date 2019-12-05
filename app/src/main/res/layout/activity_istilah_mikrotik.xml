@@ -12,10 +12,12 @@
     tools:context="com.tutorial.kamusmikrotik.IstilahMikrotik">
 
     <WebView
-        android:id="@+id/webView"
+        android:id="@+id/webView_istilah"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
         android:layout_above="@+id/adView_istilah"/>
 
     <com.google.android.gms.ads.AdView

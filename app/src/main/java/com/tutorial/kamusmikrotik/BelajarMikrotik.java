@@ -22,7 +22,7 @@ public class BelajarMikrotik extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_belajar_mikrotik);
 
-        view = (WebView) this.findViewById(R.id.webView);
+        view = (WebView) this.findViewById(R.id.webView_belajar);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
         view.loadUrl("file:///android_asset/teori_mikrotik/index.html");

@@ -20,7 +20,7 @@ public class IstilahMikrotik extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_istilah_mikrotik);
 
-        view = (WebView) this.findViewById(R.id.webView);
+        view = (WebView) this.findViewById(R.id.webView_istilah);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
         view.loadUrl("file:///android_asset/istilah_mikrotik/index.html");

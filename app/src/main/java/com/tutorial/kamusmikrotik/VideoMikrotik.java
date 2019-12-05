@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebView;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -14,12 +15,14 @@ public class VideoMikrotik extends AppCompatActivity {
     private WebView view; //membuat variabel view agar bisa akses method
     private AdView mAdView;
 
+    ProgressBar mProgressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_mikrotik);
 
-        view = (WebView) this.findViewById(R.id.webView);
+        view = (WebView) this.findViewById(R.id.webView_video);
         view.getSettings().setJavaScriptEnabled(true);
         view.loadUrl("file:///android_asset/teori_youtube/index.html");
 
