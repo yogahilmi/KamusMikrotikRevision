@@ -1,14 +1,16 @@
 <resources>
-    <string name="app_name">Tutorial Mikrotik</string>
+    <string name="app_name">Panduan Mikrotik ID</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="about">About</string>
     <string name="exit">Exit</string>
-    <string name="app_id">ca-app-pub-2684730854768563~1230187668</string>
     <string name="apptest_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="app_banner_id">ca-app-pub-2684730854768563/8713145767</string>
-    <string name="app_banner_new">ca-app-pub-9648561269277193/1847710357</string>
     <string name="app_banner_test">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="admob_app_id">ca-app-pub-9648561269277193~5024227280</string>
-    <string name="admob_unit_id">ca-app-pub-9648561269277193/9893410588</string>
+    <string name="app_id">ca-app-pub-2684730854768563~1230187668</string>
+    <string name="app_banner_id">ca-app-pub-2684730854768563/8713145767</string>
+    <string name="app_banner_belajar">ca-app-pub-2684730854768563/3632169192</string>
+    <string name="app_banner_istilah">ca-app-pub-2684730854768563/1816029805</string>
+    <string name="app_banner_video">ca-app-pub-2684730854768563/8094158384</string>
+    <string name="app_banner_about">ca-app-pub-2684730854768563/6371202544</string>
+
 </resources>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tutorial.newkamusmikrotik">
+    package="com.tutorial.kamusmikrotik">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,9 +19,8 @@
             android:value="@string/app_id" />
 
         <activity
-            android:name=".home"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".Home"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,31 +29,40 @@
         </activity> <!-- 3.) Include the AdActivity configChanges and theme. -->
         <!-- membuat tombol back  DI HALAMAN satu -->
         <activity
-            android:name=".istilahmikrotik"
+            android:name=".IstilahMikrotik"
             android:label="Kamus Istilah Mikrotik"
-            android:parentActivityName=".home">
+            android:parentActivityName=".Home">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tutorial.newkamusmikrotik.home" />
+                android:value="com.tutorial.kamusmikrotik.Home" />
         </activity> <!-- END membuat tombol back -->
         <!-- membuat tombol back  DI HALAMAN satu -->
         <activity
-            android:name=".videomikrotik"
+            android:name=".VideoMikrotik"
             android:label="Tutorial Video Mikrotik"
-            android:parentActivityName=".home">
+            android:parentActivityName=".Home">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tutorial.newkamusmikrotik.home" />
+                android:value="com.tutorial.kamusmikrotik.Home" />
         </activity> <!-- END membuat tombol back -->
         <!-- membuat tombol back  DI HALAMAN satu -->
         <activity
-            android:name=".belajarmikrotik"
+            android:name=".BelajarMikrotik"
             android:label="Belajar Mikrotik"
-            android:parentActivityName=".home">
+            android:parentActivityName=".Home">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tutorial.newkamusmikrotik.home" />
+                android:value="com.tutorial.kamusmikrotik.Home" />
         </activity>
+        <!-- membuat tombol back  DI HALAMAN satu -->
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tutorial.kamusmikrotik.Home" />
+        </activity> <!-- END membuat tombol back -->
     </application>
 
 </manifest>

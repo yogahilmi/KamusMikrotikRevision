@@ -9,7 +9,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    tools:context="com.tutorial.newkamusmikrotik.videomikrotik">
+    tools:context="com.tutorial.kamusmikrotik.VideoMikrotik">
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +23,8 @@
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible" >
+        android:visibility="visible"
+        android:layout_above="@+id/adView_video">
     </WebView>
 
     <com.google.android.gms.ads.AdView
@@ -33,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/app_banner_id"/>
+        ads:adUnitId="@string/app_banner_video"/>
 
 </RelativeLayout>
 
