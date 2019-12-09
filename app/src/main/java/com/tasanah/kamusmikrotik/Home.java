@@ -67,8 +67,8 @@ public class Home extends AppCompatActivity {
                     {
                         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                         sharingIntent.setType("text/plain");
-                        String shareBodyText = "Check it out. Your message goes here";
-                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"Subject here");
+                        String shareBodyText = "Check it out Panduan Mikrotik ID on Google Play! https://play.google.com/store/apps/details?id=com.tasanah.kamusmikrotik";
+                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"Panduan Mikrotik ID");
                         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
                         startActivity(Intent.createChooser(sharingIntent, "Sharing Option"));
 
