@@ -6,8 +6,8 @@ android {
         applicationId "com.tasanah.kamusmikrotik"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 1
-        versionName "2.0"
+        versionCode 2
+        versionName "2.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

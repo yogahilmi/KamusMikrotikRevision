@@ -3,6 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="about">About</string>
+    <string name="app_version">v.2.0.1</string>
     <string name="exit">Exit</string>
     <string name="apptest_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="app_banner_test">ca-app-pub-3940256099942544/6300978111</string>
